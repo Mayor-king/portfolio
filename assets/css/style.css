@@ -13,7 +13,7 @@ header .navbar {
     width: 100%;
     padding: 0.5rem 2rem 0.5rem 5rem;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
     border: 1px solid rgb(221, 210, 210);
 }
 
@@ -55,7 +55,7 @@ header .intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 12rem;
+    padding-left: 8rem;
     height: 100vh;
     background-color: #f9f9f9;
 }
@@ -101,7 +101,7 @@ header .intro {
 #aboutme {
     display: flex;
     height: 100vh;
-    padding: 10rem 12rem;
+    padding: 10rem 8rem;
     align-items: center;
     background: #ffffff;
     font-family: serif;
@@ -153,22 +153,100 @@ section h3 {
 
 #aboutme .about button:hover {
     font-size: 1.2rem;
-    background-color: rgba(255, 68, 0, 1);
+    background-color: coral;
 }
 
 #myskills {
-    background: yellow;
-    padding: 4rem 12rem;
+    display: flex;
+    height: 40vh;
+    padding: 4rem 8rem;
+    background-color: coral;
+    gap: 5rem;
+}
+
+#myskills h4 {
+    font-size: 1.3rem;
+    color: #343436;
+    margin-bottom: 0.5rem;
+    margin-left: 3rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 3rem;
 }
 
 #myprojects {
-    padding: 4rem 12rem;
+    display: flex;
+    padding-top: 4rem;
+    padding-left: 8rem;
+    gap: 7rem;
+}
+
+.project-list {
+    display: flex;
+    gap: 15rem;
+    /* flex-wrap: wrap; */
+}
+
+.ref {
+    width: 25vh;
+}
+
+.cards .image {
+    width: 25vw;
+    height: 50vh;
+}
+
+.cards .image:hover {
+    background-color: #656768;
+    overflow: hidden;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.cards .project-image:hover {
+    background-color: #ff4400;
+    opacity: 0.9;
+    position: absolute;
+}
+
+.image .project-image {
+    width: 25vw;
+    height: 50vh;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.project-cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.project-cta button {
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.project-cta button:hover {
+    background-color: rgb(255, 94, 0);
+    color: white;
+}
+
+h6 {
+    font-size: 1.5rem;
 }
 
 #myblog {
     display: flex;
-    padding: 4rem 12rem;
-    gap: 15rem;
+    padding: 4rem 8rem;
+    gap: 13rem;
 }
 
 .blog img{
@@ -192,8 +270,8 @@ section h3 {
 
 #contact {
     display: flex;
-    padding: 4rem 12rem;
-    gap: 10rem;
+    padding: 4rem 8rem;
+    gap: 7rem;
 }
 
 #contact p {
