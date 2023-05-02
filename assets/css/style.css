@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
 }
 
+/**************** Navbar in the Header Section ****************/
 header .navbar {
     display: flex;
     justify-content: space-between;
@@ -53,6 +54,7 @@ header .navbar {
     color: #ff4400;
 }
 
+/**************** Home Section ****************/
 header .intro {
     display: flex;
     align-items: center;
@@ -159,6 +161,7 @@ section h3 {
     background-color: coral;
 }
 
+/**************** Skills Section ****************/
 #myskills {
     display: flex;
     height: 40vh;
@@ -205,6 +208,7 @@ section h3 {
     gap: 1rem;
 }
 
+/**************** Project Section ****************/
 #myprojects {
     display: flex;
     padding-top: 4rem;
@@ -274,6 +278,7 @@ h6 {
     font-size: 1.3rem;
 }
 
+/**************** Blog Section ****************/
 #myblog {
     display: flex;
     padding: 4rem 8rem;
@@ -300,6 +305,7 @@ h6 {
     cursor: pointer;
 }
 
+/**************** Contact me Section ****************/
 #contact {
     display: flex;
     padding: 4rem 8rem;
@@ -311,6 +317,7 @@ h6 {
     color: #272727;
 }
 
+/**************** Form in my Contact Section ****************/
 form {
     display: flex;
     flex-direction: column;
@@ -342,6 +349,7 @@ form button:hover, form button:focus {
     background-color: #2D2E32;
 }
 
+/**************** Footer Section ****************/
 footer {
     display: flex;
     padding: 0 8rem;
@@ -358,6 +366,7 @@ footer {
     gap: 1rem;
 }
 
+/**************** Linked Social media Handles ****************/
 .footer a {
     color: white;
 }
