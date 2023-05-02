@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header .navbar {
@@ -14,6 +15,7 @@ header .navbar {
     padding: 0.5rem 2rem 0.5rem 5rem;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.85);
+    z-index: 100;
     border: 1px solid rgb(221, 210, 210);
 }
 
@@ -61,7 +63,8 @@ header .intro {
 }
 
 .intro img {
-    width: 22rem;
+    width: 24rem;
+    box-shadow:  4px 8px 21px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
 }
 
@@ -71,38 +74,37 @@ header .intro {
 }
 
 .intro .facts p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #d2601a;
 }
 .intro .facts {
-    max-width: 40%;
+    max-width: 45%;
     padding: 10% 5% 0 0;
 }
 
 .facts h2{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: black;
 }
 
 .facts .aka {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #d2601a;
 }
 
 .intro .facts .introduction {
     color: black;
     font-family: Mulish, sans-serif;
-    font-size: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding-top: 1rem;
 }
-
+/**************** About me Section ****************/
 #aboutme {
     display: flex;
     height: 100vh;
     padding: 10rem 8rem;
-    align-items: center;
+    /* align-items: center; */
     background: #ffffff;
     font-family: serif;
     gap: 10rem;
@@ -115,7 +117,7 @@ header .intro {
 }
 
 #aboutme h3 {
-    padding: 1rem 0 0;
+    padding: .1rem 0 0;
 }
 
 section h3 {
@@ -132,18 +134,19 @@ section h3 {
     position: relative;
     bottom: 0.5rem;
     margin-top: 0.8rem;
+    margin-bottom: 2rem;
     background-color: black;
 }
 
 .me {
     padding: 0.4rem 0;
-    font-size: 1.2rem;
-    color: #2a2a2c;
+    font-size: 1.4rem;
+    color: #272727;
 }
 
 #aboutme .about button {
     padding: 1rem 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -165,14 +168,16 @@ section h3 {
 }
 
 #myskills h4 {
-    font-size: 1.3rem;
-    color: #343436;
+    font-size: 1.5rem;
+    color: #484849;
+    opacity: 0.8;
     margin-bottom: 0.5rem;
     margin-left: 3rem;
 }
 
 .skills {
     display: flex;
+    font-size: 1.2rem;
     flex-direction: column;
     gap: 1.5rem;
     margin-left: 3rem;
@@ -265,6 +270,10 @@ h6 {
     font-size: 1.5rem;
 }
 
+.tools {
+    font-size: 1.3rem;
+}
+
 #myblog {
     display: flex;
     padding: 4rem 8rem;
@@ -288,6 +297,7 @@ h6 {
     overflow: hidden;
     height: 15rem;
     width: 22rem;
+    cursor: pointer;
 }
 
 #contact {
@@ -318,13 +328,18 @@ form input, textarea {
 
 form button {
     padding: 12px 24px;
-    width: 5rem;
+    font-size: 1.1rem;
+    width: 6rem;
     border: none;
     color: white;
     background-color: black;
     border-radius: 5px;
     text-align: center;
 
+}
+
+form button:hover, form button:focus {
+    background-color: #2D2E32;
 }
 
 footer {
@@ -339,10 +354,14 @@ footer {
 }
 
 .footer {
+    display: flex;
     gap: 1rem;
+}
+
+.footer a {
     color: white;
 }
 
-.footer:hover, .footer:visited, .footer:active {
+.footer a:hover {
     color: #ff4400;
 }
