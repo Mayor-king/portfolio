@@ -133,6 +133,7 @@ section h3 {
 .borderb {
     height: 2px;
     width: 25px;
+    top: 0.3rem;
     position: relative;
     bottom: 0.5rem;
     margin-top: 0.8rem;
