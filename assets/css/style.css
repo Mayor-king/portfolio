@@ -286,7 +286,7 @@ h6 {
     gap: 13rem;
 }
 
-.blog img{
+.blog img {
     /* width: 20rem;
     height: 10rem; */
     margin-top: -7rem;
@@ -377,7 +377,7 @@ footer {
 }
 
 
-@media (min-width: 370px) and (max-width: 420px) {
+@media (min-width: 370px) and (max-width: 414px) {
     header .navbar {
         padding: 0.5rem 2rem;
         position: fixed;
@@ -388,11 +388,183 @@ footer {
     }
 
     header .intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 8rem;
-    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 120vh;
+    padding: 0;
+    padding-top: 2rem;
+    }
+
+    .intro img {
+        width: 17rem;
+    }
+
+    .intro .headshot {
+        padding-top: 0rem;
+        padding-right: 2rem;   
+    }
+
+    .intro .facts p {
+        padding-top: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .intro .facts {
+        max-width: 75vw;
+        /* padding: 0 1vw 0 0; */
+        margin-top: -9rem;
+    }
     
-}
+    .facts h2{
+        font-size: 2rem;
+    }
+    
+    .facts .aka {
+        font-size: 1.3rem;
+    }
+    
+    .intro .facts .introduction {
+        /* padding-top: 2rem; */
+        /* font-size: 1.1rem; */
+        width: fit-content;
+        /* padding-top: 1rem; */
+    }
+
+    #aboutme {
+        display: block;
+        padding: 7rem 2.5rem;
+        height: fit-content;
+    }
+
+    #aboutme .pic img {
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+    }
+
+    #myskills {
+        display: block;
+        padding: 3rem 1.5rem;
+        background-color: #f9f9f9;
+        height: fit-content;
+    }
+
+    .ability {
+        margin: 1rem 0 1rem -3.2rem;
+        padding: 1.5rem 4.1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .ability h4 {
+        display: none;
+    }
+
+    .lang {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background {
+        display: flex;
+        gap: 1.3rem;
+    }
+
+    .borderb {
+        display: none;
+    }
+
+    .me {
+        padding: .5rem 0;
+        font-family: Mulish, sans-serif;
+        font-size: 1.2rem;
+    }
+
+    #myprojects {
+        display: block;
+        padding: 4rem 0;
+    }
+
+    #myprojects h3{
+        padding: 5%;
+    }
+
+    .project-list {
+        display: block;
+    }
+
+    .ref {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .cards {
+        padding: 5%;
+    }
+    
+    .cards .image {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .image .project-image {
+        width: 90vw;
+        height: 40vh;
+    }
+    #myblog {
+        display: block;
+        padding: 5% 5% 20%;
+
+    }
+
+    .blog {
+        margin-top: 2rem;
+        width: 95%;
+        align-items: center;
+    }
+
+    #contact {
+        display: block;
+        padding: 5%;
+    }
+
+    #contact form {
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+        width: 80vw;
+        max-height: 80vh;
+    }
+
+    .contact-flex {
+        margin-top: 2rem;
+    }
+    footer {
+        display: flex;
+        padding: 0 8rem;
+        background: #2D2E32;
+        height: 25vh;
+        color: white;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer {
+        display: flex;
+        gap: 1rem;
+    }
+    footer {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        align-self: center;
+        height: 10vh;
+        background-color: white;
+        color: black;
+    }
+
+    .footer {
+        display: none;
+    }
 }
