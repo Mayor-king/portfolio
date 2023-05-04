@@ -375,3 +375,24 @@ footer {
 .footer a:hover {
     color: #ff4400;
 }
+
+
+@media (min-width: 370px) and (max-width: 420px) {
+    header .navbar {
+        padding: 0.5rem 2rem;
+        position: fixed;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    header .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8rem;
+    height: 100vh;
+    
+}
+}
