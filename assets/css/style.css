@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /**************** Navbar in the Header Section ****************/
 header .navbar {
     display: flex;
@@ -52,6 +56,9 @@ header .navbar {
 
 .navlinks a:hover {
     color: #ff4400;
+}
+.menu {
+    display: none;
 }
 
 /**************** Home Section ****************/
@@ -160,6 +167,26 @@ section h3 {
 #aboutme .about button:hover {
     font-size: 1.2rem;
     background-color: coral;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: wrap;
+    padding: 8rem;
+}
+
+.gallery img {
+    height: 30vh;
+    width: 25vw;
+}
+
+.display {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 2rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 /**************** Skills Section ****************/
@@ -376,22 +403,289 @@ footer {
     color: #ff4400;
 }
 
+@media  (max-width: 645px) {
+    .navlinks {
+        display: none;
+    }
 
-@media (min-width: 370px) and (max-width: 414px) {
+    .menu {
+        display: inline;
+        color: white;
+        font-size: 2rem;
+        position: relative;
+        right: 1rem;
+    }
+    header .intro  {
+        width: 100vw;
+        height: 90vh;
+        padding: 0;
+        gap: 0rem;
+        flex-direction: row-reverse;
+    }
+
+    .intro img {
+        width: 10rem;
+        /* display: none; */
+    }
+    .intro .headshot {
+        padding: 0 0 0 8%;
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .intro .facts {
+        max-width: 40%;
+        /* padding-right: 1%; */
+        position: relative;
+        right: 3rem;
+    }
+
+    .intro .facts .introduction {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 1000px) {
     header .navbar {
         padding: 0.5rem 2rem;
         position: fixed;
+        padding-right: 0;
+    }
+
+    .navbar h1 {
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .intro {
+        padding: 2rem 0;
+        margin: 0;
+        /* justify-content: left; */
+    }
+
+    .intro img {
+        width: 14rem;
+        /* display: none; */
+    }
+
+    .intro .facts p {
+        padding-top: 3rem;
+        font-size: 1rem;
+    }
+
+    .intro .facts {
+        max-width: 40%;
+        padding-right: 8%;
+        /* padding: 0 1vw 0 0; */
+        margin-top: -9rem;
+    }
+    
+    .facts h2{
+        font-size: 1.5rem;
+    }
+    
+    .facts .aka {
+        font-size: 1.1rem;
+    }
+    
+    .intro .facts .introduction {
+        /* padding-top: 2rem; */
+        font-size: 1.3rem;
+        /* padding-top: 1rem; */
+    }
+
+    #aboutme {
+        display: block;
+        padding: 7rem 2.5rem;
+        height: fit-content;
+    }
+
+    #aboutme .pic img {
+        width: 400px;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+    }
+
+    #myskills {
+        display: block;
+        padding: 3rem 1.5rem;
+        background-color: #f9f9f9;
+        height: fit-content;
+    }
+
+    .ability {
+        margin: 1rem 0 1rem -2.2rem;
+        padding: 1.5rem 4.1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .ability h4 {
+        display: none;
+    }
+
+    .gallery {
+        margin-top: -10rem;
+        padding-left: 10%;
+    }
+
+    .gallery img {
+        /* min-width: 35vw; */
+        width: 70vw;
+        height: auto;
+    }
+
+    .lang {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background {
+        display: flex;
+        gap: 1.3rem;
+        justify-content: center;
+    }
+
+    .borderb {
+        display: none;
+    }
+
+    .me {
+        padding: .5rem 0;
+        font-family: Mulish, sans-serif;
+        font-size: 1.2rem;
+    }
+
+    #myprojects {
+        display: block;
+        padding: 4rem 0;
+    }
+
+    #myprojects h3{
+        padding: 5%;
+    }
+
+    .project-list {
+        display: block;
+    }
+
+    .ref {
+        width: 75vw;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .cards {
+        padding: 9%;
+    }
+    
+    .cards .image {
+        width: 75vw;
+        height: auto;
+    }
+
+    .image .project-image {
+        width: 75vw;
+        height: 50vh;
+    }
+
+    #myblog {
+        display: block;
+        padding: 5% 10% 20%;
+
+    }
+
+    .blog {
+        margin-top: 2rem;
+        width: 75%;
+        align-items: center;
+    }
+
+    #contact {
+        display: block;
+        padding: 10%;
+    }
+
+    #contact form {
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+        width: 70vw;
+        max-height: 80vh;
+    }
+
+    .contact-flex {
+        margin-top: 2rem;
+    }
+    footer {
+        display: flex;
+        padding: 0 8rem;
+        background: #2D2E32;
+        height: 25vh;
+        color: white;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer {
+        display: flex;
+        gap: 1rem;
+    }
+    footer {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        align-self: center;
+        height: 10vh;
+        background-color: white;
+        color: black;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+
+@media (min-width: 370px) and (max-width: 550px) {
+    body {
+        height: 730vh;
+    }    
+
+    header .navbar {
+        padding: 0.5rem 2rem;
+        position: fixed;
+    }
+
+    .navbar h1 {
+        display: flex;
+        align-items: center;
     }
 
     .navlinks {
         display: none;
     }
 
+    .menu {
+        display: inline;
+        color: white;
+        font-size: 2rem;
+        position: relative;
+        right: 1rem;
+    }
+
     header .intro {
     flex-direction: column-reverse;
     justify-content: space-around;
     height: 120vh;
-    padding: 0;
+    padding: 0 rem;
     padding-top: 2rem;
     }
 
@@ -410,7 +704,8 @@ footer {
     }
 
     .intro .facts {
-        max-width: 75vw;
+        max-width: 80vw;
+        padding-left: 3rem;
         /* padding: 0 1vw 0 0; */
         margin-top: -9rem;
     }
@@ -460,6 +755,16 @@ footer {
 
     .ability h4 {
         display: none;
+    }
+
+    .gallery {
+        margin-top: -10rem;
+        padding-left: 10%;
+    }
+
+    .gallery img {
+        width: 80vw;
+        height: 25vh;
     }
 
     .lang {
